@@ -8,7 +8,7 @@ type Props = {
     saleId: number;
 };
 
-function handleClick(id : number) {
+function handleClick(id : number) { 
     axios(`${BASE_URL}/sales/${id}/notification`)
         .then(Response => {
             toast.info("SMS Enviado com sucesso"); 
